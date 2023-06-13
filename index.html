@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Hram Svetog Save Beograd">
+    <meta name="keywords" content="Hram Svetog Save, Beograd, Crkva, Pravoslavlje, Sveti Jovan Krstitelj,">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>3D Hram Svetog Save</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html"><img src="logo.png" class="logo"></a>
+        <div class="toggle"></div>
+        <ul class="menu">
+            <li class="active"><a href="#home" onclick="toggleMenu()">ПОЧЕТНА</a></li>
+            <li class="proizvod4"><a href="#proizvod" onclick="toggleMenu();">О ПРОИЗВОДУ</a></li>
+            <li class="proizvod3"><a href="#proizvod2"  onclick="toggleMenu()">О ПРОИЗВОДУ</a></li>
+           <!--<li><a href="#testimonial" onclick="toggleMenu()">ГАЛЕРИЈА</a></li>--> 
+            <li><a href="#kupi" onclick="toggleMenu()">ПОРУЧИ</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon" onclick="toggleMenu()"></div>
+    </header>
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h3>Храм</h3>
+            <h1>СВЕТОГ САВЕ</h1>
+            <p> Макета Храма Светог Саве коју <br> склапаш сам из <span>256 делова</span></p>
+            <ul class="navodjenje">
+               <!-- <li>
+                    <p>ВИСИНА <span>27цм</span></p>
+                </li>
+                <li>
+                    <p>ШИРИНА <span>40цм</span></p>
+                </li>
+                <li>
+                    <p>ДУЖИНА <span>37цм</span></p>
+                </li>-->
+            </ul>
+            <a href="#kupi" class="btn">ПОРУЧИ ОДМАХ</a>
+        </div>
+    </section>
+
+
+    <div class="humanitarno">
+        <div class="humanitarno-img">
+            <img src="Srbi_za_srbe.png" alt="">
+        </div>
+        <div class="humanitarno-content">
+            <h1>10% ХУМАНИТАРНО</h1>
+            <p>Куповином храма донирате <span>10%</span> <br>хуманитарној организацији <span>СРБИ ЗА СРБЕ</span></p>
+        </div>
+    </div>
+
+
+<!-- PROIZVOD ZA TELEFON-->
+    <section class="proizvod2 nodesk" id="proizvod2">
+        <div class="proizvod-naslov">
+            <h1>Шта добијам у кутији?</h1>
+        </div>
+        <!--<div class="proizvod-img">
+                <img src="Dijelovi hrama.png" alt="">
+            </div>-->
+        <div class="proizvod-content2">
+            <p>У кутији има <span>256 делова</span> + <span>упутство за склапање храма</span></p>
+        </div>
+        <div class="proizvod-content2">
+            <p>
+                што значи да не можете погрешити и да ћете добити идентичан изглед као и ми
+            </p>
+        </div>
+        <div class="proizvod-img">
+            <img src="Delovi.png" alt="">
+        </div>
+    </section>
+
+    
+<!--ZA DESKTOP -->
+    <section class="proizvod" id="proizvod">
+        <div class="proizvod-img">
+            <img src="Delovi.png" alt="">
+        </div>
+        <div class="proizvod-content">
+            <h1>Шта добијам у кутији?</h1>
+            <p>У кутији има <span>256 делова</span> + <span>упутство за склапање храма</span></p>
+            <p>
+                што значи да не можете погрешити и да ћете добити идентичан изглед као и ми
+            </p>
+        </div>
+    </section>
+
+    <div class="parametri">
+        <img src="Vreme_sklapanja.png" alt="">
+      </div>
+
+    <!--ISKLJUCI UKLJUCI-->
+    <div class="pozadina">
+        <div class="home-content ukljuci">
+            <h1> ПАЗИ ОВО...</h1>
+            <p>Ставите храм под неко светло <br> како бисте добили најбољи изглед</p>
+            <p> Притисни дугме <span>да упалиш светло</span></p>
+        </div>
+            <div id="toggle" >
+            <i class="indicator"></i>
+        </div>
+    </div>
+    
+
+        <!--TESTIMONAIL PROBA 2
+    <div class="testimonial-container" id="testimonial">
+        <div class="proizvod-naslov">
+            <h1>Ево како су то други урадили</h1>
+        </div>
+
+        <div class="testimonial-wrapper">
+            <div class="testimonial-box mySwiper">
+                <div class="testimonial-content swiper-wrapper">
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="Hram_galerija_1.jpg" alt="">
+
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="Hram_galerija_2.jpg" alt="">
+
+                    </div>
+                    <div class="testimonial-slide swiper-slide">
+                        <img src="Hram_galerija_3.jpg" alt="">
+
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>-->
+
+        <!--TESTIMONAIL PROBA 3-->
+
+        <section class="body-for-gallery-pozadina" id="testimonial">
+            <div class="testimonial-naslov">
+                <h1>Ево како су то други урадили</h1>
+            </div>
+            <div class="body-forgallery">
+                <div class="gallery">
+                    <div class="gallery-container">
+                        <img class="gallery-item gallery-item-1" src="Hram_galerija_2.jpg" data-index="1">
+                        <img class="gallery-item gallery-item-2" src="Hram_galerija_1.jpg" data-index="2">
+                        <img class="gallery-item gallery-item-3" src="Hram_galerija_2.jpg" data-index="3">
+                        <img class="gallery-item gallery-item-4" src="Hram_galerija_3.jpg" data-index="4">
+                        <img class="gallery-item gallery-item-5" src="Hram_galerija_2.jpg" data-index="5">
+                    </div>
+                    <div class="gallery-controls"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="stasvedobijas nodesk">
+            <img src="Zoomed_in.jpg" alt="">
+        </div>
+
+        <div class="stasvedobijas2 nomob">
+            <img src="Details.png" alt="">
+        </div>
+    
+    
+    <div class="parametri parametridorada">
+      <img src="Висина_храма.png" alt="">
+    </div>
+
+        <div class="stacekas2 nodesk">
+            <h1>ШТА ЧЕКАШ?</h1>
+
+            <p>Попуни податке и пузле су на твојој адреси за <span> 24 сата</span>, а плаћаш тек када стигну.
+              </p>  <p> <span> И не заборави главну ствар, 10% си дао у хуманитарне сврхе! </span>
+            </p>
+        </div>
+
+        <div class="container-forma3 nodesk">
+            <img src="Cijena.jpg" alt="">
+        </div>
+
+
+        
+        <section class="contact" id="kupi">
+    <div class="container-contact">
+        <div class="container-forma">
+            <div class="form signup">
+                <h2>Где да шаљемо?</h2>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Име и презиме</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Улица и број</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span> Град и поштански број</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>Број телефона</span>
+                </div>
+                <div class="inputBox">
+                    <input type="email" required="required">
+                    <span>Е маил</span>
+                </div>
+                <div class="inputBox">
+                    <input type="submit" value="ПОРУЧИ">
+                </div>
+
+            </div>
+        </div>
+        <div class="container-desno">
+            <div class="container-forma2">
+                <h1>Штa чекаш?</h1>
+
+                <p>Попуни податке и пузле су на твојој адреси за <b> 24 сата</b>, а плаћаш тек када стигну.
+                    <br><span> И не заборави главну ствар, 10% си дао у хуманитарне сврхе! </span>
+                </p>
+            </div>
+            <div class="container-forma3">
+                <img src="Cena.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--<form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Име">
+                    <input type="text" placeholder="Презиме">
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Мобилни телефон">
+                    <input type="email" placeholder="Е маил адреса">
+                </div>
+                <div class="input-box">
+                <input type="text" placeholder="Улица и број">
+                <input type="text" placeholder="Град и поштански број">
+            </div>
+                <input type="submit" value="ПОРУЧИ" class="btn-zeleni">
+            </form>-->
+    </section>
+    <div class="copyright">
+        <p>Copyright @ 2023 <span>Макета храма Светог Саве</span>. All Right Reserved.</p>
+    </div>
+
+    <!-- swiper js-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

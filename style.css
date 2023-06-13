@@ -1,0 +1,1606 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold?styles=20878,20880');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*font-family: 'Poppins', sans-serif;*/
+  font-family: 'Gilroy-Light', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body{
+  background: #000;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transition: 0.5s;
+  /*background: #232323;*/
+}
+
+header ul {
+  position: relative;
+  display: flex;
+  margin-right: 250px;
+}
+
+header ul li {
+  position: relative;
+  list-style: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  /*margin-left: 15px;
+    margin-right: 15px;*/
+}
+
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+}
+
+header ul li.active {
+  background: #2f7774;
+}
+
+header .logo {
+  max-width: 150px;
+  margin-bottom: -85px;
+}
+
+header .active1 {
+  display: none;
+}
+
+header .active2 {
+  margin-top: 15px;
+}
+
+section {
+  min-height: 100vh;
+  padding: 10rem 13% 2rem;
+  
+}
+
+header .menu li.proizvod3 {
+  display: none;
+}
+
+#menu-icon {
+  display: none;
+}
+
+/*SEKCIJA PROIZVOD*/
+
+.home {
+  position: relative;
+  /*background-image: linear-gradient(to left, #181818, #4D4D4D);*/
+  /*background-image: radial-gradient(#4D4D4D, #181818);*/
+  background-image: url(HramPoceta_strana_1920.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.home-content h3 {
+  font-size: 7.2rem;
+  position: relative;
+  font-family: 'Caveat', cursive;
+  /*font-weight: 700;*/
+  line-height: 0.3;
+  color: #2f7774;
+  padding-bottom: 20px;
+  z-index: 2;
+  margin-bottom: -10px;
+}
+
+.home-content h1 {
+  position: relative;
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 4.2rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: white;
+  z-index: 1;
+}
+
+.home-content p {
+  font-size: 1.6rem;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  color: white;
+}
+
+.home-content p span {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: white;
+}
+
+ul.navodjenje {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  margin-bottom: 150px;
+}
+
+ul.navodjenje li {
+  color: white;
+}
+
+.btn {
+  padding: 15px 30px;
+  background: #2f7774;
+  border-radius: 0.3rem;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+}
+
+.home-img img {
+  position: absolute;
+  top: 5%;
+  left: 20%;
+  width: 95%;
+  pointer-events: none;
+}
+
+/*SEKCIJA SRBI ZA SRBE*/
+.humanitarno {
+ /* background-image: linear-gradient(to right, #181818, #4d4d4d);*/
+  background-image: url(Desctop_1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 3rem 13% 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.humanitarno .humanitarno-img {
+  max-width: 600px;
+}
+
+.humanitarno .humanitarno-img img {
+  height: 700px;
+}
+
+.humanitarno-content h1 {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: white;
+}
+
+.humanitarno-content p {
+  font-size: 1.3rem;
+  font-weight: 100;
+  letter-spacing: 1.2px;
+  color: white;
+}
+
+.humanitarno-content p span {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: white;
+}
+
+/*SEKCIJA PROIZVOD*/
+
+section.proizvod {
+  min-height: 500px;
+  padding: 0 100px;
+}
+
+.proizvod{
+  background-image: linear-gradient(to bottom,#193231, #2f7774);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.nodesk {
+  display: none;
+}
+
+.proizvod-naslov {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+.proizvod-content {
+  /*display: flex;*/
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 130px;
+  padding-left: 150px;
+}
+
+.proizvod-content h1 {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 50px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.proizvod-content p {
+  font-size: 1.3rem;
+  font-weight: 100;
+  letter-spacing: 1.2px;
+  color: white;
+}
+
+.proizvod-content p span {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: white;
+}
+
+.proizvod-img {
+  position: relative;
+  padding-left: 100px;
+}
+
+.proizvod-img img {
+  max-width: 500px;
+}
+
+/*ISKLJUCI UKLJUCI SEKCIJA*/
+.pozadina {
+  background-image: url(Desctop_svjetlo_2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.5s;
+  min-height: 100vh;
+  /*background-size: cover;*/
+}
+
+.pozadina .ukljuci {
+  position: absolute;
+  top: 150px;
+  left: 10%;
+}
+#toggle {
+  position: absolute;
+  top: 450px;
+  left: 10%;
+  display: block;
+  width: 120px;
+  height: 60px;
+  border-radius: 160px;
+  background: #222;
+  transition: 0.5s;
+  cursor: pointer;
+  box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+    inset 0 8px 8px rgba(0, 0, 0, 0.1), inset 0 -4px -4px rgba(0, 0, 0, 0.1);
+}
+
+#toggle.active {
+  background: #2f7774;
+  box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+    inset 0 2px 8px rgba(0, 0, 0, 0.1), inset 0 -4px 4px rgba(0, 0, 0, 0.05);
+}
+
+#toggle .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(to bottom, #444, #222);
+  border-radius: 50%;
+  transform: scale(0.9);
+  box-shadow: inset 0 8px 40px rgba(0, 0, 0, 0.5),
+    inset 0 4px 4px rgba(255, 255, 255, 0.2),
+    inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+}
+
+#toggle.active .indicator {
+  left: 60px;
+  background: linear-gradient(to bottom, #2f7774, #193231);
+  box-shadow: inset 0 8px 20px rgba(0, 0, 0, 0.1),
+    inset 0 4px 4px rgba(255, 255, 255, 0.5),
+    inset 0 -4px 4px rgba(255, 255, 255, 0.5);
+}
+
+/*DETALJI SEKCIJA YA DESKTOP*/
+.stasvedobijas2
+{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.stasvedobijas2 img{
+  max-width: 100%;
+  max-height: 900px;
+}
+
+
+/*TESTIMONIAL SEKCIJA */
+
+.testimonial-container {
+  background-image: url(HramPoceta_strana_1920.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  /*background-image: linear-gradient(to right, #181818, #4D4D4D);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 5rem 1rem;
+}
+
+.testimonial-naslov h1 {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 50px;
+  color: #2f7774;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.testimonial-container .testimonial-wrapper {
+  position: relative;
+  max-width: 60rem;
+  width: 100%;
+  padding: 5rem;
+}
+
+.testimonial-wrapper .testimonial-box {
+  padding: 1rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.testimonial-container .testimonial-slide {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.9);
+  /*background: linear-gradient(to right, #181818, #4D4D4D);*/
+  border-radius: 2rem;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+  padding: 3rem 5rem;
+  border-top: 0.8rem solid #2f7774;
+  border-bottom: 0.8rem solid #2f7774;
+}
+
+.testimonial-slide img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.testimonial-box .swiper-button-next,
+.testimonial-box .swiper-button-prev {
+  color: #2f7774;
+}
+
+.testimonial-box .swiper-button-next {
+  right: 0;
+}
+
+.testimonial-box .swiper-button-prev {
+  left: 0;
+}
+
+.testimonial-box .swiper-pagination-bullet {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.testimonial-box .swiper-pagination-bullet-active {
+  background: #2f7774;
+}
+
+/*TESTIMONIAL 3*/
+.body-for-gallery-pozadina {
+  display: none;
+  background-image: url(HramPoceta_strana_1920.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.body-forgallery {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gallery {
+  width: 100%;
+}
+
+.gallery-container {
+  padding-top: 100px;
+  align-items: center;
+  display: flex;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+.gallery-item {
+  height: 300px;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 330px;
+  z-index: 0;
+  border-radius: 15px;
+  background-size: contain;
+  border-top: 0.4rem solid #2f7774;
+  border-bottom: 0.4rem solid #2f7774;
+}
+
+.gallery-item-1 {
+  left: 15%;
+  opacity: 0.4;
+  transform: translateX(-50%);
+}
+
+.gallery-item-2,
+.gallery-item-4 {
+  height: 350px;
+  opacity: 0.8;
+  width: 380px;
+  z-index: 1;
+}
+
+.gallery-item-2 {
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.gallery-item-3 {
+  box-shadow: -2px 5px 33px 6px rgba(0, 0, 0, 0.35);
+  height: 400px;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 430px;
+  z-index: 2;
+}
+
+.gallery-item-4 {
+  left: 70%;
+  transform: translateX(-50%);
+}
+
+.gallery-item-5 {
+  left: 85%;
+  opacity: 0.4;
+  transform: translateX(-50%);
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  margin: 25px 0;
+  height: 100px;
+}
+
+.gallery-controls button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  font-size: 30px;
+  margin: 0 50px;
+  padding: 0 12px;
+  text-transform: capitalize;
+}
+
+.gallery-controls-button:focus {
+  outline: none;
+}
+
+.gallery-controls-previous {
+  position: relative;
+}
+
+.gallery-controls-previous::before {
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: '';
+  display: inline-block;
+  height: 5px;
+  left: -30px;
+  padding: 10px;
+  position: absolute;
+  top: 25%;
+  transform: rotate(135deg) translateY(-50%);
+  transition: left 0.15s ease-in-out;
+  width: 5px;
+}
+
+.gallery-controls-previous:hover::before {
+  left: -40px;
+}
+
+.gallery-controls-next {
+  position: relative;
+}
+
+.gallery-controls-next::before {
+  border: solid #000;
+  border-width: 0 5px 5px 0;
+  content: '';
+  display: inline-block;
+  height: 5px;
+  padding: 10px;
+  position: absolute;
+  right: -30px;
+  top: 45px;
+  transform: rotate(-45deg) translateY(-50%);
+  transition: right 0.15s ease-in-out;
+  width: 5px;
+}
+
+.gallery-nav {
+  bottom: -15px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.galery nav li {
+  background: #ccc;
+  border-radius: 50%;
+  height: 10px;
+  margin: 0 16px;
+  width: 10px;
+}
+
+.gallery-nav li.gallery-item-selcted {
+  background: #555;
+}
+
+/*PARAMETRI SEKCIJA*/
+.parametri{
+    display: none;
+}
+
+
+/* KUPI SEKCIJA */
+
+.contact {
+  /*background-image: linear-gradient(to right, #181818, #4D4D4D);*/
+  background-image: url(HramPoceta_strana_1920.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.btn-zeleni {
+  padding: 10px 100px;
+  background: #2f7774;
+  border-radius: 0.3rem;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: 900;
+  color: black;
+  text-decoration: none;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+/*
+.contact form .input-box input {
+    width: 49%;
+}
+*/
+
+.kontakt-naslov {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.kontakt-naslov h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #2f7774;
+}
+
+.contact .container-contact h1 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: white;
+  /*padding-left: 120px;
+    padding-right: 120px;*/
+  margin-bottom: 15px;
+}
+
+.kontakt-sadrzaj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-desno {
+  margin-top: 140px;
+}
+
+.contact p {
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: 100;
+  letter-spacing: 1.2px;
+  color: white;
+  /* padding-left: 120px;
+    padding-right: 120px;*/
+  margin-bottom: 15px;
+}
+
+.container-forma3 img {
+  max-width: 100%;
+}
+.container-forma2 {
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-left: 150px;
+  margin-right: 150px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.container-forma2 h1 {
+  text-align: left;
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.container-forma2 p span {
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: white;
+}
+
+/*FORMA 2 ZA KUPI */
+
+.container-contact {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-height: 840px; /*100vh*/
+  /*background: #2f7774;*/
+  /*background-image: url(Hram_Pocetna_strana1600.jpg);
+    background-position: center;
+    background-repeat: no-repeat;*/
+  /*border-radius: 5px;*/
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+.container-forma {
+  margin-left: 100px;
+  padding: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.container-forma .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.container-forma .form h2 {
+  /*color: #fff;*/
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  padding-bottom: 10px;
+}
+
+.container-forma .form .inputBox {
+  position: relative;
+  width: 300px;
+}
+
+.container-forma .form .inputBox input {
+  padding: 12px 10px 12px 48px;
+  border: none;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-weight: 300;
+  border-radius: 25px;
+  font-size: 1em;
+  box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.35);
+  transition: 0.5s;
+  outline: none;
+}
+
+.container-forma .form .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 12px 10px 12px 48px;
+  pointer-events: none;
+  font-size: 1em;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.5);
+  
+}
+
+.container-forma .form .inputBox input:valid ~ span,
+.container-forma .form .inputBox input:focus ~ span {
+  color: #00dfc4;
+  border: 1px solid #00dfc4;
+  background: #2f7774;
+  transform: translateX(25px) translateY(-7px);
+  font-size: 0.6em;
+  padding: 0 8px;
+  border-radius: 10px;
+  letter-spacing: 0.1em;
+}
+
+.container-forma .form .inputBox input:valid,
+.container-forma .form .inputBox input:focus {
+  border: 1px solid #00dfc4;
+}
+
+.container-forma .form .inputBox input[type='submit'] {
+  background: #2f7774;
+  color: white;
+  padding: 15px 0;
+  font-weight: 700;
+  font-family: 'Gilroy-Bold', sans-serif;
+  cursor: pointer;
+  font-size: 20px;
+  text-align: center;
+  
+  /*box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1),
+5px 5px 15px rgba(0, 0, 0, 0.35),
+inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+inset 5px 5px 15px rgba(0, 0, 0, 0.35);*/
+}
+
+/*FUTER TANKI MALI NA KRAJU*/
+
+.copyright p{
+  color: white;
+  text-align: center;
+}
+
+
+/*THANK YOU PAGE */
+
+.thankyou{
+  background-image: url(HramPoceta_strana_1920.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.thankyou h1{
+  position: relative;
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  padding: 30px;
+  margin-bottom: 400px;
+  color: white;
+}
+/*RESPNSIVE*/
+
+@media screen and (max-width: 1664px) {
+  .container-forma2 {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1364px) {
+
+  .proizvod-content {
+    padding-right: 0px;
+  }
+  
+  
+  .container-forma2 {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .container-forma {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 1245px) {
+
+   /*SEKCIJA KUPI*/
+   .container-contact {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    min-height: 40px;
+    border: 0;
+    box-shadow: none;
+   }
+
+   .container-forma {
+    margin-left: 20px;
+   }
+
+  .container-desno{
+    padding-top: 95px;
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  header ul {
+    margin-right: 50px;
+  }
+
+  .humanitarno-content h1{
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+
+  .humanitarno-content p{
+    font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+  }
+
+  .humanitarno-content p span{
+      font-size: 1.3rem;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+  }
+
+  .container-forma {
+    margin-left: 0px;
+   }
+
+   .container-desno {
+    padding-right: 20px;
+   }
+
+
+}
+/*991 RESPONSIVE */     /*991 RESPONSIVE */     /*991 RESPONSIVE */
+@media screen and (max-width: 991px) {
+  header {
+    padding: 5px 15px;
+    justify-content: space-between;
+  }
+  header .menu li.proizvod3 {
+    display: block;
+  }
+
+  header .menu li.proizvod4 {
+    display: none;
+  }
+
+  #menu-icon {
+    font-size: 2.5rem;
+    display: block;
+    filter: invert(1);
+  }
+
+  header .active2 {
+    margin-top: 0px;
+  }
+
+section{
+  padding: 25px;
+}
+
+section.home{
+  padding: 8rem 3% 2rem;
+}
+
+  .menu {
+    position: absolute;
+    /*top: 100%;*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 3%;
+    background: #000;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .menu.active5 {
+    display: block;
+  }
+
+  .menu a {
+    /* display: block;*/
+    font-size: 1rem;
+    margin: 1rem 0;
+  }
+
+  header ul li.active {
+    background: transparent;
+  }
+
+  header .logo {
+    max-width: 80px;
+    margin-bottom: 0px;
+  }
+
+  /*HUMANITARNO*/
+
+  /*PROIZVOD*/
+  .proizvod {
+    display: none;
+  }
+
+  .proizvod2 {
+    background-image: linear-gradient(to bottom, #193231, #2f7774);
+    min-height: 100vh;
+    display: block;
+  }
+
+  .proizvod-naslov {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .proizvod-naslov h1 {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-align: center;
+    color: white;
+    line-height: 35px;
+  }
+
+  .proizvod-content2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .proizvod-content2 p {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    color: white;
+  }
+
+  .proizvod-content2 p span {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: white;
+  }
+
+ 
+
+  .proizvod-img {
+    position: relative;
+
+  }
+
+  .proizvod-img img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    max-width: 500px;
+  }
+
+  /*GALRERIJA*/
+  .gallery-item-5,
+  .gallery-item-1 {
+    opacity: 0;
+  }
+
+  /*SEKCIJA KUPI*/
+
+  .container-forma3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  section.contact {
+    background: #000;
+    min-height: 650px;
+    margin-top: 30px;
+ 
+  }
+
+  .container-contact {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+    min-height: 40px;
+    border: 0;
+    box-shadow: none;
+}
+
+.container-desno {
+  display: none;
+}
+
+/*.nodesk {
+  display: block;
+}*/
+
+.container-forma {
+  margin-left: 0px;
+ }
+ .container-desno .container-forma3 img {
+  padding-left: 0px;
+ }
+
+ .stacekas2{
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 30px;
+ }
+
+ .stacekas2 h1{
+  font-family: 'Gilroy-Bold', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+ }
+
+ .stacekas2 p{
+  font-family: 'Gilroy-Light', sans-serif;
+  font-size: 1.3rem;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+ }
+
+ .stacekas2 p span{ 
+  font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .home {
+    align-items: start;
+  }
+
+  .home-content{
+    padding-left: 10px;
+  }
+
+  .home-content h3 {
+    font-size: 4.2rem;
+    line-height: 0.3;
+    padding-bottom: 20px;
+ 
+  }
+  
+  .home-content h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  
+  .home-content p {
+    font-size: 1rem;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    margin-bottom: 45px;
+  }
+  
+  .home-content p span {
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    color: white;
+  }
+
+  ul.navodjenje {
+    display: none;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    border-radius: 0.2rem;
+    letter-spacing: 1px;
+    font-size: 15px;
+  }
+
+  /*HUMANITARNO*/
+  .humanitarno {
+    flex-direction: column;
+  }
+
+  .humanitarno-content{
+    margin-top: -200px;
+  }
+  
+
+  /*PROIZVOD*/
+  .proizvod-naslov h1 {
+    font-size: 1.5rem;
+  }
+
+  .proizvod-content2 p {
+    font-size: 1rem;
+  }
+
+  .proizvod-content2 p span{
+    font-size: 1rem;
+  }
+
+
+
+  /*UKLJUCI ISKLJUCI*/
+  .home-content h1 {
+    font-size: 1.5rem;
+
+  }
+  /*GALERIJA*/
+  section.body-for-gallery-pozadina{
+   min-height: 600px;
+   
+  }
+  .testimonial-naslov h1{
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #2f7774;
+    text-align: center;
+    line-height: 35px;
+    margin-bottom: 0;
+  }
+
+  .gallery {
+    width: 100%;
+    overflow: hidden;
+    
+  }
+
+  .gallery-container {
+    padding-top: 100px;
+    height: 350px;
+    max-width: 350px;
+  }
+  .gallery-item {
+    height: 200px;
+    width: 220px;
+    /*border-top: 0;
+    border-bottom: 0;*/
+  }
+  /*.gallery-item-3{
+  border-radius: 15px;
+  border-top: 0.4rem solid #2f7774;
+  border-bottom: 0.4rem solid #2f7774;
+  }*/
+
+  .gallery-item-5,
+  .gallery-item-1 {
+    opacity: 0;
+  }
+
+  .gallery-controls {
+    display: flex;
+    justify-content: center;
+    margin:  0;
+    height: 20px;
+ 
+}
+
+/*KUPI SEKCIJA*/
+.stacekas2 h1 {
+  font-size: 1.5rem;
+}
+
+.stacekas2 p {
+  font-size: 1rem;
+}
+
+.stacekas2 p span{
+  font-size: 1rem;
+}
+
+}
+
+
+@media screen and (max-width: 500px) /*klany i ja*/{
+
+  body {
+    touch-action: pan-y;
+  }
+
+  .nodesk{
+    display: block;
+  }
+
+  .nomob{
+    display: none;
+  }
+
+  .home{
+    background-image: url(Hero_banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+  .home-content {
+    padding-left: 21px;
+}
+.home-content h3 {
+  font-size: 3.2 rem;
+}
+
+.home-content h1 {
+  font-size: 42px;
+}
+
+.home-content p {
+  font-size: 17px;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  margin-bottom: 45px;
+}
+
+.home-content p span {
+  font-size: 17px;
+}
+
+.humanitarno {
+   /*background-image: linear-gradient(to right, #181818, #4d4d4d);*/
+   background-image: url(Srbizasrbe1.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   margin-top: -150px;
+   height: 100vh;
+   padding: 3rem 10% 2rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+ }
+ .humanitarno-content{
+  padding-top: 150px;
+  margin-top: 0;
+ }
+
+ .humanitarno-content h1{
+  text-align: center;
+  font-size: 29px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+.humanitarno-content p{
+  text-align: center;
+  font-size: 17px;
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 24px;
+}
+
+.humanitarno-content p span{
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+}
+ 
+ .humanitarno-img{
+  display: none;
+ }
+
+/*PROIZVOD*/
+
+section.proizvod2{
+  margin-top: -50px;
+  min-height: 750px
+}
+
+.proizvod2 {
+  border-radius: 50px;
+  border-top: 0.8rem solid white;
+  border-bottom: 0.8rem solid white;
+}
+
+.proizvod2  .proizvod-img{ 
+  left: -50px;
+  max-width: 400px;
+  margin-top: -100px;
+}
+
+.proizvod-naslov h1 {
+  font-size: 36px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-align: left;
+  line-height: 35px;
+  margin-bottom: 20px;
+  margin-top: 25px;
+  color: white;
+  padding-left: 10px;
+}
+
+.proizvod-content2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 50px;
+}
+
+.proizvod-content2 p {
+  text-align: left;
+  font-size: 17px;
+  font-weight: 100;
+  letter-spacing: 1.8px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.proizvod-content2 p span {
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: white;
+}
+
+/*PARAMETRI VISINA SIRINA*/
+.parametri{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(123123.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.parametridorada{
+margin-top: -50px
+}
+.parametri img{
+max-width: 90%;
+margin-top: 80px;
+}
+
+/*DUGME ISKLJUCI UKLJUCI*/
+
+.pozadina{
+  /*margin-top: -150px;
+  margin-top: 40px;*/
+  background-image: url(Bezsvjetla.jpg);
+  min-height: 900px;
+}
+
+.pozadina .ukljuci{
+  margin-top: -100px;
+  padding: 0px;
+  /*margin-left: -20px;*/
+}
+
+.ukljuci h1{
+  margin-bottom: 40px;
+}
+
+.ukljuci p{
+  margin-bottom: 25px;
+  padding-right: 100px;
+}
+
+ #toggle {
+  position: absolute;
+  top: 350px;
+  left: 15%;
+  display: block;
+  width: 120px;
+  height: 60px;
+}
+
+/*STA DOBIJAS SEKCIJA*/
+
+.stasvedobijas{
+margin-top: -150px 
+}
+
+.stasvedobijas img{
+  max-width: 100%;
+}
+
+
+/*KUPI SEKCIJA*/
+
+
+
+.stacekas2{
+  color: white;
+  padding: 20px 40px;
+ }
+
+ .stacekas2 h1{
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+ }
+
+ .stacekas2 p{
+    text-align: left;
+    font-size: 17px;
+    margin-bottom: 20px;
+    padding-right: 40px;
+    letter-spacing: 1.3px;
+ }
+
+ .stacekas2 p:last-child{
+  color: #2f7774;
+ }
+
+ .stacekas2 p span{ 
+    font-size: 17px;
+    letter-spacing: 1.3px;
+}
+.container-forma .form h2 {
+  display: none;
+}
+.container-forma .form .inputBox span {
+  color: #fff;
+}
+
+
+/*futer mali tanki*/
+.copyright p{
+font-size: 12px;
+}
+}
+
+/*450 RESPONSIVE*/
+
+
+@media screen and (max-width: 450px) {
+  .container-forma{
+  padding: 20px;
+  }
+
+  .humanitarno-content p{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .proizvod2  .proizvod-img img{ 
+    max-width: 420px;
+  }
+
+  .ukljuci p{
+    padding-right: 60px;
+  }
+}
+
+
+
+
+@media screen and (max-width: 365px) {
+  .home-content h3 {
+    font-size: 3.2rem;
+  }
+  
+
+  .home-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-content p {
+    font-size: 0.9rem;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    margin-bottom: 45px;
+  }
+  
+  .home-content p span {
+    font-size: 0.9rem;
+  }
+  .container-forma{
+    padding: 5px;
+    }
+    .proizvod-content2 {
+      padding-right: 10px;
+    }
+
+    .proizvod2  .proizvod-img img{ 
+      max-width: 320px;
+    }
+} 
